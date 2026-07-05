@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav-head {
+    background-color: #1f2937;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    margin: auto; 
+    padding: 10px 0px;
+}
+.logo{
+    display: flex;
+    margin-right: auto;
+    align-self: center;
+}
+.logo a {
+    font-size: 26px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+.logo a img{
+    background-color: transparent;
+    height: 160px;
+}
+.divide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0px 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffba08;
+}
+.navbar i{
+    padding: 0px 10px;
+}
+.navbar i:hover{
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 0;
+    outline: none;
+    width: 200px;
+}
+
+.search-btn {
+    background-color: #ffba08;
+    border: none;
+    border-radius: 18px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #e0a806;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
+
+.nav-icons .user-icon {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #ffba08;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-icons .user-icon:hover {
+    background-color: #e0a806;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links li{
+        display: none;
+    }
+    .navbar i{
+        padding: 0px 5px;
+        margin-right: 0;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+    }
+
+    .search-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .search-container button{
+        border-radius: 18px;
+    }
+}
+/* About Section */
+.about-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about-section h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-section {
+    flex: 1 1 20%;
+    padding: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #ccc;
+}

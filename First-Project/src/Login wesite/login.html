@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+    <script src="https://kit.fontawesome.com/06bd98d1f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav-head">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../../index.html">IT.NET</a>
+        </div>
+       <div class="divide"> 
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../products page/products.html">Products</a></li>
+            <li><a href="../contact us/contact.html">Support</a></li>
+            <li><a href="#">Brands</a></li>   
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-btn">search</button>
+        </div>
+        <div class="nav-icons">
+            <a href="../Login wesite/login.html" class="user-icon">Login</a>
+        </div>
+        <i class="fa-solid fa-bars" style="color: rgb(207, 206, 206);"></i>
+        </div>
+    </nav>
+</header>
+    <div class="login-container">
+        <h2>LOGIN</h2>
+        <form action="/login" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <div class="links">
+           <label>Forgot password?</label><a href="../forgot password page/forgot.html"> Reset it here</a>
+        </div>
+        <div class="create-account">
+           <label>Don't have an account?</label> <a href="../create-account/create-account.html"> Create an account</a>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
