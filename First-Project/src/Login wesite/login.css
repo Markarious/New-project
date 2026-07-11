@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 .navbar{
-    background-color: rgba(212, 212, 212, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,13 +27,14 @@ body {
     list-style: none;
     padding: 18px 40px;
     font-weight:bold;
-    transition: transform 0.3s ease;
 }
 .items a{
+    display: inline-block;
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease;
 }
-.navbar i{
+.icons i{
     padding: 0px 25px;
 }
 .logo a{
@@ -43,9 +44,30 @@ body {
     font-weight: bolder;
     padding: 0px 10px;
 }
-.items li:hover{
+.items li a:hover{
     transform: scale(1.06);
+}
+.dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.spec{
+    position: relative;
     
+}
+.spec:hover .dropdown{
+    display: block;
+}
+.dropdown li:hover{
+    background: #eee;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: black;
+    display: block;
 }
  .login-container {
      background-color: #ffffff;
