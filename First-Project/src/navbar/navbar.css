@@ -16,8 +16,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: absolute;
     top: 0;
+    width: 100%;
     backdrop-filter: blur(5px) ;
 }
 .items{
@@ -52,6 +53,7 @@ body{
     display: block;
     position: absolute;
     left: 0;
+    top: 100%;
     display: none;
 }
 .spec{
@@ -69,4 +71,62 @@ body{
     text-decoration: none;
     color: black;
     display: block;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+    border: 2px solid;
+    border-radius: 30px;
+    background-color: rgb(29, 29, 29);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.display{
+    font-size: 35px;
+    height: 150px;
+    background-color: rgb(112, 112, 112);
+    border: none ;
+    border-radius: 20px;
+    padding: 13px;
+    margin: 10px;
+    margin-bottom: 0;
+    color: white;
+    overflow-wrap:break-word;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.numbers{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 6px 5px;
+    
+}
+.numbers button{
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(112, 112, 112);
+    color: white;
+}
+.numbers button:active{
+    background-color:rgb(155, 155, 155) ;
+}
+.numbers button:nth-child(4n){
+    background-color: rgb(255, 166, 0);
+}
+.numbers button:nth-child(4n):active{
+    background-color:rgb(255, 197, 90) ;
 }
