@@ -145,12 +145,14 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+}
 .product {
-background-color: #fff;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    float:left;
-    width: 23%;
     margin: 1%;
     box-sizing: border-box;
     padding: 15px;
@@ -186,12 +188,12 @@ background-color: #fff;
 }
 .product button{
     background-color: #27ae60;
-        color: #fff;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        border-radius: 3px;
-        transition: background-color 0.3s ease;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
 .product button:hover {
     background-color: #2ecc71;
